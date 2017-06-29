@@ -1,7 +1,7 @@
 <?php
 
 /**
-* Plugin Name: Subscription Tweaks
+* Plugin Name: JetpackTweaks - Subscription Tweaks
 * Description: Turns on per-post subscription settings.
 * Author: Josh Einstein
 * Version: 1.0
