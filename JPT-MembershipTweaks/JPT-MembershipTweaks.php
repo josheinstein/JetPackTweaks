@@ -18,4 +18,12 @@ if ( ! function_exists( 'wp_password_change_notification' ) ) {
     }
 }
 
+function jpt_remove_jetpack_from_subscribers() {
+    if( class_exists( 'Jetpack' ) && !current_user_can( 'manage_options' ) ) {
+        remove_menu_page( 'jetpack' );
+    }
+}
+
+add_action( 'admin_init', 'jpt_remove_jetpack_from_subscribers' );
+
 ?>
